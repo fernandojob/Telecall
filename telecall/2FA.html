@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2FA - AUTENTICAÇÃO DE DOIS FATORES</title>
+    <link rel="stylesheet" href="style(2fa).css" type="text/css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/00a61a6834.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Barra de Navegação -->
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"><a href="./index.html">Telecall</a></span>
+
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="./index.html">Telecall</a></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="./2FA.html">2FA</a></li>
+            <li><a href="./NMascara.html">Número Máscara</a></li>
+            <li><a href="./consultarN.html">Consultar Número</a></li>
+            <li><a href="./sms.html">SMS Programável</a></li>
+            <li><a href="./cadastro.html">Cadastrar</a></li>
+            <li class="usuario"><a href="login.html">Login</a></li>
+            <li class="deslogar" onclick="deslogar()">Deslogar</li>
+          </ul>
+        </div>
+        <div class="darkLight-searchBox">
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+
+          <div class="searchBox">
+            <div class="searchToggle"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Barra de Navegação -->
+    <main>
+      <section class="container">
+        <div class="af-header">
+          <p class="af-header-text">AUTENTICAÇÃO DE DOIS FATORES</p>
+
+          <div class="linha"></div>
+
+          <p class="legenda-2fa">
+            Fortaleça a estratégia de segurança de seu negócio.
+          </p>
+        </div>
+
+        <div class="af-header">
+          <img
+            src="./img/2fa/2fa-img-nobg.png"
+            alt="uma mulher virada de costas acessando sua conta com um codigo que recebeu em seu celular"
+          />
+        </div>
+      </section>
+
+      <section class="como-funciona">
+        <div class="como-funciona-tittle">
+          <p class="como-funciona-text">Como funciona?</p>
+          <div class="linha-como-funciona"></div>
+        </div>
+      </section>
+
+      <section class="icones-e-legendas-como-funciona">
+        <div class="imagem-e-texto">
+          <div class="imagens">
+            <img
+              id="laptop"
+              src="./img/2fa/2fa-como-funciona/laptop.png"
+              alt="notebook"
+            />
+            <div class="texto-como-funciona">
+              <p class="legenda-como-funciona">
+                Usuário acessa seu site ou aplicativo e digita a senha
+                cadastrada para entrar em seu perfil ou completar uma transação.
+              </p>
+            </div>
+          </div>
+          <div class="imagens">
+            <img
+              id="warning"
+              src="./img/2fa/2fa-como-funciona/warning.png"
+              alt="uma imagem que possui um icone de aviso "
+            />
+            <div class="texto-como-funciona">
+              <p class="legenda-como-funciona">
+                A Telecall recebe a tentativa de login e solicita que o usuário
+                insira seu número de telefone para autorizar o acesso.
+              </p>
+            </div>
+          </div>
+          <div class="imagens">
+            <img
+              id="pin-code"
+              src="./img/2fa/2fa-como-funciona/smartphone-pin.png"
+              alt="uma imagem de um celular com um codigo em numeros"
+            />
+            <div class="texto-como-funciona">
+              <p class="legenda-como-funciona">
+                Após inserir seu número, a Telecall envia para o usuário por SMS
+                ou chamada de voz um código PIN de uso único.
+              </p>
+            </div>
+          </div>
+          <div class="imagens">
+            <img
+              id="laptop"
+              src="./img/2fa/2fa-como-funciona/laptop2.png"
+              alt="notebook"
+            />
+            <div class="texto-como-funciona">
+              <p class="legenda-como-funciona">
+                O usuário insere o código no site ou aplicativo para concluir o
+                processo de verificação.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="beneficios-2fa">
+        <div class="beneficios-tittle">
+          <p class="beneficios-text">Benefícios do 2FA</p>
+          <div class="linha-como-funciona"></div>
+        </div>
+      </section>
+
+      <section class="beneficios-icones-e-texto">
+        <div class="beneficios-redimensionar">
+          <div class="beneficios-imagem">
+            <img
+              src="./img/2fa/2fa-beneficios/2fa-steps.png"
+              alt="a tela de um computador com uma seta apontando para um celular, um codigo em numeros no celular e formulario de login na tela do computador"
+            />
+          </div>
+          <div class="beneficios-legenda">
+            <p>
+              <i class="fa-solid fa-check fa-xl" style="color: #14b12a"></i>
+              Ofereça segurança aprimorada para seus clientes
+            </p>
+            <p>
+              <i class="fa-solid fa-check fa-xl" style="color: #14b12a"></i>
+              Reduza casos de fraude e invasões e evite o acesso a dados por
+              invasores.
+            </p>
+            <p>
+              <i class="fa-solid fa-check fa-xl" style="color: #14b12a"></i>
+              Envio de OTP por meio de vários canais, incluindo SMS e voz.
+            </p>
+            <p>
+              <i class="fa-solid fa-check fa-xl" style="color: #14b12a"></i>
+              Flexibilidade de canais garante que o usuário conseguirá completar
+              a tarefa desejada.
+            </p>
+            <p>
+              <i class="fa-solid fa-check fa-xl" style="color: #14b12a"></i> API
+              simples e de rápida implementação.
+            </p>
+            <p>
+              <i class="fa-solid fa-check fa-xl" style="color: #14b12a"></i>
+              Plataforma intuitiva que permite visualizar relatórios de uso por
+              dia, mês ou ano.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="utilizacoes">
+        <div class="utilizacoes-tittle">
+          <p class="utilizacoes-text">Utilizações</p>
+          <div class="linha-utilizacoes"></div>
+        </div>
+      </section>
+
+      <section class="utilizacoes-icones-tittle-legenda">
+        <div class="caixa-agrupando">
+          <div class="icone-tittle-legenda">
+            <i
+              class="fa-solid fa-money-check-dollar fa-4x"
+              style="color: #2fade3"
+            ></i>
+            <p class="utilizacoes-paragrafo">Finanças</p>
+            <ul>
+              <li>Acesso ao portal/app</li>
+              <li>Autenticação para transações bancárias</li>
+              <li>Pagamentos Online</li>
+              <li>Digital Wallets</li>
+            </ul>
+          </div>
+          <div class="icone-tittle-legenda">
+            <i class="fa-solid fa-heart-pulse fa-4x" style="color: #2fade3"></i>
+            <p class="utilizacoes-paragrafo">Saúde</p>
+            <ul>
+              <li>Acesso ao portal/app</li>
+              <li>Agendamentos</li>
+              <li>Tokens de autorização</li>
+              <li>Telemedicina</li>
+            </ul>
+          </div>
+          <div class="icone-tittle-legenda">
+            <i class="fa-solid fa-plane fa-4x" style="color: #2fade3"></i>
+            <p class="utilizacoes-paragrafo">Turismo</p>
+            <ul>
+              <li>Acesso ao portal/app</li>
+              <li>Gestão de Reservas</li>
+              <li>Acesso ao histórico</li>
+              <li>Salvar dados de pagamentos</li>
+              <li>Recuperação de senha</li>
+            </ul>
+          </div>
+          <div class="icone-tittle-legenda">
+            <i class="fa-solid fa-cart-arrow-down fa-4x" style="color: #2fade3">
+            </i>
+            <p class="utilizacoes-paragrafo">Varejo</p>
+            <ul>
+              <li>Acesso ao portal/app</li>
+              <li>Salvar dados de pagamentos</li>
+              <li>Acesso ao histórico</li>
+              <li>Recuperação de senha</li>
+              <li>Recibo Eletrônico</li>
+            </ul>
+          </div>
+          <div class="icone-tittle-legenda">
+            <i class="fa-solid fa-box fa-4x" style="color: #2fade3"></i>
+            <p class="utilizacoes-paragrafo">Logística</p>
+            <ul>
+              <li>Acesso ao portal/app</li>
+              <li>Salvar dados de pagamentos</li>
+              <li>Acesso ao histórico</li>
+              <li>Recuperação de senha</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-text">
+        Copyright © 2023 | Telecall. Todos os direitos reservados.
+      </p>
+    </footer>
+
+    <script type="text/javascript" src="script(cpaas).js"></script>
+  </body>
+</html>

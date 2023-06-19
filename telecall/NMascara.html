@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Número Mascara</title>
+    <link rel="stylesheet" href="style(NMascara).css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/00a61a6834.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- Barra de Navegação -->
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"><a href="./index.html">Telecall</a></span>
+
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="./index.html">Telecall</a></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="./2FA.html">2FA</a></li>
+            <li><a href="./NMascara.html">Número Máscara</a></li>
+            <li><a href="./consultarN.html">Consultar Número</a></li>
+            <li><a href="./sms.html">SMS Programável</a></li>
+            <li><a href="./cadastro.html">Cadastrar</a></li>
+            <li class="usuario"><a href="login.html">Login</a></li>
+            <li class="deslogar" onclick="deslogar()">Deslogar</li>
+          </ul>
+        </div>
+        <div class="darkLight-searchBox">
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+
+          <div class="searchBox">
+            <div class="searchToggle"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Barra de Navegação -->
+
+    <main>
+      <section class="container">
+        <div class="nmascara-header">
+          <p class="nmascara-header-text">NÚMERO MÁSCARA</p>
+
+          <div class="linha"></div>
+
+          <p class="legenda-nmascara">Proteja identidades profissionais.</p>
+          <p class="legenda-nmascara-sub">
+            Garanta aos seus clientes a capacidade de fazer chamadas e enviar
+            mensagens sem expor seus números de telefone pessoais.
+          </p>
+        </div>
+
+        <div class="nmascara-header">
+          <img
+            src="./img/NMascara/numero-mascara.png"
+            alt="um homem na esquerda no meio um celular com um numero na tela e na direita uma mulher, os dois estão conversando."
+          />
+        </div>
+      </section>
+
+      <section class="como-funciona">
+        <div class="como-funciona-tittle">
+          <p class="como-funciona-text">Como funciona?</p>
+          <div class="linha-como-funciona"></div>
+        </div>
+      </section>
+      <section class="texto-icone-texto">
+        <div class="caixa-icone-texto">
+          <div class="caixa-como-funciona">
+            <div class="texto-como-funciona">
+              <p class="texto-como-funciona">
+                Usuário faz uma chamada através de um aplicativo.
+              </p>
+            </div>
+            <div class="img-como-funciona">
+              <img
+                src="./img/NMascara/number_masking1.png"
+                alt="uma mulher com seu celular ao lado ligando"
+              />
+            </div>
+            <div class="texto-como-funciona">
+              <p class="texto-como-funciona">
+                Ex.: usuário liga para o entregador ou motorista de taxi ou
+                entra em contato com a central de atendimento.
+              </p>
+            </div>
+          </div>
+          <div class="caixa-como-funciona">
+            <div class="texto-como-funciona">
+              <p class="texto-como-funciona">
+                Plataforma mascara o número original.
+              </p>
+            </div>
+            <div class="img-como-funciona">
+              <img
+                id="number-masking2"
+                src="./img/NMascara/number_masking2.png"
+                alt="uma nuvem simbolizando um servidor recebendo a ligação da mulher "
+              />
+            </div>
+            <div class="texto-como-funciona">
+              <p class="texto-como-funciona">
+                A plataforma recebe a chamada e mascara o número antes de
+                conectar o destinatário.
+              </p>
+            </div>
+          </div>
+          <div class="caixa-como-funciona">
+            <div class="texto-como-funciona">
+              <p class="texto-como-funciona">Ambas as partes são conectadas.</p>
+            </div>
+            <div class="img-como-funciona">
+              <img
+                id="number-masking3"
+                src="./img/NMascara/number_masking3.png"
+                alt="mulher conversando com um atendente via ligação"
+              />
+            </div>
+            <div class="texto-como-funciona">
+              <p class="texto-como-funciona">
+                A plataforma conecta ambas as partes mantendo a privacidade dos
+                dois.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="quem-usa">
+        <div class="quem-usa-tittle">
+          <p class="quem-usa-text">Quem usa?</p>
+          <div class="linha-quem-usa"></div>
+        </div>
+      </section>
+
+      <section class="quem-usa-imagem-tittle-legenda">
+        <div class="caixa-quem-usa">
+          <div class="caixa-imagem-tittle-legenda">
+            <div class="imagem-quem-usa">
+              <img src="./img/NMascara/taxi.png" alt="taxi" />
+            </div>
+            <div class="tittle-quem-usa"><p>Apps de Transporte</p></div>
+            <div class="legenda-quem-usa">
+              <p>
+                Permite que motorista e passageiro se comuniquem sem
+                compartilhar seus números pessoais.
+              </p>
+            </div>
+          </div>
+          <div class="caixa-imagem-tittle-legenda">
+            <div class="imagem-quem-usa">
+              <img
+                src="./img/NMascara/chat.png"
+                alt="um celular exibindo um chat de conversa"
+              />
+            </div>
+            <div class="tittle-quem-usa"><p>Apps de Relacionamento</p></div>
+            <div class="legenda-quem-usa">
+              <p>
+                Permite uma maneira privada e segura para usuários interagirem
+                sem expor contatos pessoais.
+              </p>
+            </div>
+          </div>
+          <div class="caixa-imagem-tittle-legenda">
+            <div class="imagem-quem-usa">
+              <img
+                src="./img/NMascara/shopping-cart.png"
+                alt="uma carrinho de compras"
+              />
+            </div>
+            <div class="tittle-quem-usa"><p>E-Commerce</p></div>
+            <div class="legenda-quem-usa">
+              <p>
+                Permite que clientes entrem em contato através do aplicativo.
+                Podem também integrar chamadas internacionais.
+              </p>
+            </div>
+          </div>
+          <div class="caixa-imagem-tittle-legenda">
+            <div class="imagem-quem-usa">
+              <img
+                src="./img/NMascara/express-delivery.png"
+                alt="um caminhão de entrega"
+              />
+            </div>
+            <div class="tittle-quem-usa"><p>Entregas & Logística</p></div>
+            <div class="legenda-quem-usa">
+              <p>
+                Mantenha seu cliente informado sobre entregas e serviços, tire
+                dúvidas, etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-text">
+        Copyright © 2023 | Telecall. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script type="text/javascript" src="script(cpaas).js"></script>
+  </body>
+</html>

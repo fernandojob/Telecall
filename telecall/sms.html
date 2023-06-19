@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMS Programável &#8211; CPaaS Telecall</title>
+    <link rel="stylesheet" href="style(sms).css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/00a61a6834.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- Barra de Navegação -->
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"><a href="./index.html">Telecall</a></span>
+
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="./index.html">Telecall</a></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="./2FA.html">2FA</a></li>
+            <li><a href="./NMascara.html">Número Máscara</a></li>
+            <li><a href="./consultarN.html">Consultar Número</a></li>
+            <li><a href="./sms.html">SMS Programável</a></li>
+            <li><a href="./cadastro.html">Cadastrar</a></li>
+            <li class="usuario"><a href="login.html">Login</a></li>
+            <li class="deslogar" onclick="deslogar()">Deslogar</li>
+          </ul>
+        </div>
+        <div class="darkLight-searchBox">
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+
+          <div class="searchBox">
+            <div class="searchToggle"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Barra de Navegação -->
+    <main>
+      <section class="container">
+        <div class="consultarN-header">
+          <p class="consultarN-header-text">SMS Programável</p>
+
+          <div class="linha"></div>
+
+          <!-- <p class="legenda-consultarN">Proteja identidades profissionais.</p> -->
+          <p class="legenda-consultarN-sub">
+            Conecte-se com seus clientes de forma fácil e rápida.
+          </p>
+        </div>
+        <div class="consultarN-header">
+          <img
+            src="./img/sms/image-2-1024x1024-removebg-preview.png"
+            alt="um celular rcebendo um sms"
+          />
+        </div>
+      </section>
+      <section class="como-funciona">
+        <div class="como-funciona-tittle">
+          <p class="como-funciona-text">Como funciona?</p>
+          <div class="linha-como-funciona"></div>
+        </div>
+      </section>
+      <section class="imagem-texto">
+        <div class="caixa-texto-imagem">
+          <div class="imagem-como-funciona">
+            <img
+              src="./img/sms/campanha-sms-em-massa.png"
+              alt="uma mão segunrando um celular que está recebendo um sms"
+            />
+          </div>
+          <div class="texto-como-funciona">
+            <p>
+              É muito provável que você já tenha recebido uma mensagem de texto
+              de uma empresa ou organização.
+            </p>
+            <p>
+              Com as APIs de CPaaS Telecall, qualquer empresa pode enviar
+              mensagens de texto ou voz e impactar clientes, prospects ou
+              fornecedores como parte de seu processo comercial.
+            </p>
+            <p>
+              Com essa ferramenta, você envia mensagens de SMS ou de voz com as
+              informações que o seu cliente precisa e com a segurança, a
+              velocidade e a confiabilidade que você espera.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="sms-texto-meio">
+        <div class="texto-meio">
+          <p>
+            SMS é a forma mais rápida, eficiente e de baixo custo para se
+            comunicar com seus clientes.
+          </p>
+        </div>
+      </section>
+
+      <section class="porcentagem-e-textos">
+        <div class="caixa">
+          <div class="caixa-porcentagem-e-textos">
+            <div class="porcentagem"><p>98%</p></div>
+            <div class="texto"><p>de taxa de abertura</p></div>
+          </div>
+          <div class="caixa-porcentagem-e-textos">
+            <div class="porcentagem"><p>90%</p></div>
+            <div class="texto"><p>dos SMS são lidos em até 3 minutos</p></div>
+          </div>
+          <div class="caixa-porcentagem-e-textos">
+            <div class="porcentagem"><p>80%</p></div>
+            <div class="texto">
+              <p>das pessoas interagem com SMS comerciais</p>
+            </div>
+          </div>
+          <div class="caixa-porcentagem-e-textos">
+            <div class="porcentagem"><p>35x</p></div>
+            <div class="texto">
+              <p class="text-probabilidade">
+                maior a probabilidade de um cliente abrir um SMS do que um
+                e-mail.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="beneficios">
+        <div class="beneficios-tittle">
+          <p class="beneficios-text">Benefícios</p>
+          <div class="linha-beneficios"></div>
+        </div>
+      </section>
+
+      <section class="legenda-beneficios">
+        <div class="caixa-beneficios">
+          <p>
+            <i class="fa-solid fa-check fa-xl" style="color: #14b12a"></i>
+            Comunicação rápida, efetiva e escalável.
+          </p>
+
+          <p>
+            <i class="fa-solid fa-check fa-xl" style="color: #14b12a"></i>
+            Baixo custo.
+          </p>
+          <p>
+            <i class="fa-solid fa-check fa-xl" style="color: #14b12a"></i>
+            Alta taxa de entrega e leitura.
+          </p>
+          <p>
+            <i class="fa-solid fa-check fa-xl" style="color: #14b12a"></i>
+            Personalização de data, hora e conteúdo.
+          </p>
+          <p>
+            <i class="fa-solid fa-check fa-xl" style="color: #14b12a"></i>
+            Interação bidirecional: recebimento de respostas.
+          </p>
+          <p>
+            <i class="fa-solid fa-check fa-xl" style="color: #14b12a"></i>
+            Plataforma user-friendly.
+          </p>
+          <p>
+            <i class="fa-solid fa-check fa-xl" style="color: #14b12a"></i>
+            Acompanhamento de métricas e relatórios
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="footer-text">
+        Copyright © 2023 | Telecall. Todos os direitos reservados.
+      </p>
+    </footer>
+    <script type="text/javascript" src="script(cpaas).js"></script>
+  </body>
+</html>

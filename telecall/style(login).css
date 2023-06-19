@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: var(--body-color);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:root {
+  --body-color: #e4e9f7;
+  --nav-color: #2fade3;
+  --side-nav: #2fade3;
+  --text-color: #fff;
+  --search-bar: #f2f2f2;
+  --search-text: #010718;
+  --p-color: #010718;
+}
+
+body.dark {
+  --body-color: #3a3b3c;
+  --nav-color: #242526;
+  --side-nav: #242526;
+  --text-color: #ccc;
+  --search-bar: #242526;
+  --p-color: #ccc;
+}
+
+.dark-light {
+  position: absolute;
+  right: 75px;
+  bottom: 46px;
+}
+
+.dark-light i {
+  position: absolute;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dark-light i.sun {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.dark-light.active i.sun {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.dark-light.active i.moon {
+  opacity: 0;
+  pointer-events: none;
+}
+
+#logo {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.container.dark {
+  background-color: #18191a;
+}
+
+.container.dark label {
+  color: #fafafa;
+}
+
+.header {
+  background-color: #eee;
+  padding: 20px;
+  position: relative;
+}
+
+.header.dark {
+  background-color: #242526;
+  color: #fafafa;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.form-control input {
+  border: 2px solid #f0f0f0;
+  display: block;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+}
+.form-control i {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  visibility: hidden;
+}
+
+.form-control small {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.form button {
+  background-color: #2fade3;
+  border: 2px solid #2fade3;
+  color: #fff;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+/* sucesso e erro */
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #ef3b47;
+}
+
+.form-control.success i.fa-check-circle {
+  color: #2ecc71;
+  visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  color: #ef3b47;
+  visibility: visible;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #ef3b47;
+}
