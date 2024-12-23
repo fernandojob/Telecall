@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consulta Número &#8211; CPaaS Telecall</title>
+    <link rel="stylesheet" href="style(consultarN).css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/00a61a6834.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <!-- Barra de Navegação -->
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"><a href="./index.html">Telecall</a></span>
+
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="./index.html">Telecall</a></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="./2FA.html">2FA</a></li>
+            <li><a href="./NMascara.html">Número Máscara</a></li>
+            <li><a href="./consultarN.html">Consultar Número</a></li>
+            <li><a href="./sms.html">SMS Programável</a></li>
+            <li><a href="./cadastro.html">Cadastrar</a></li>
+            <li class="usuario"><a href="login.html">Login</a></li>
+            <li class="deslogar" onclick="deslogar()">Deslogar</li>
+          </ul>
+        </div>
+        <div class="darkLight-searchBox">
+          <div class="botoes">
+            <button id="btnAumentar">A+</button>
+            <button id="btnDiminuir">A-</button>
+          </div>
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+
+          <div class="searchBox">
+            <div class="searchToggle"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Barra de Navegação -->
+    <main>
+      <section class="container">
+        <div class="consultarN-header">
+          <p class="consultarN-header-text">Consultar Número</p>
+
+          <div class="linha"></div>
+
+          <!-- <p class="legenda-consultarN">Proteja identidades profissionais.</p> -->
+          <p class="legenda-consultarN-sub texto">
+            Obtenha informações sobre um número de telefone celular de maneira
+            fácil e rápida consultando.
+          </p>
+        </div>
+        <div id="consultarN-header-img" class="consultarN-header">
+          <img
+            id="imagem-consultarN"
+            src="./img/ConsultarN/Consulta-no-2-1024x1024-removebg-preview.png"
+            alt="uma mulher sentada mexendo em seu celular, ao lado mostra o que está exibindo em seu celular, ela está 
+            consultando um número de telefone"
+          />
+        </div>
+      </section>
+
+      <section class="informacoes">
+        <div class="legenda-informacoes">
+          <p class="texto">
+            Consulte de forma rápida e fácil informações sobre um número de
+            telefone celular, sem a necessidade de fazer uma ligação. Basta
+            digitar o número do telefone com o DDD e nosso serviço informará a
+            operadora a qual o número pertence, sua localização e se foi feita a
+            portabilidade.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <div class="footerdiv">
+      <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item">
+            <a
+              class="social-icon__link"
+              href="https://www.facebook.com/TelecallBr/?locale=pt_BR"
+              target="_blank"
+            >
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a
+              class="social-icon__link"
+              href="https://www.linkedin.com/company/telecall/"
+              target="_blank"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a
+              class="social-icon__link"
+              href="https://www.instagram.com/telecallbr/"
+              target="_blank"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu-footer">
+          <li class="menu__item">
+            <a class="menu__link" href="./index.html">Telecall</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./2FA.html">2FA</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./NMascara.html">Número Mascara</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./consultarN.html">Consultar Número</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./sms.html">SMS Programável</a>
+          </li>
+        </ul>
+        <p>&copy;2023 Telecall | All Rights Reserved</p>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script type="text/javascript" src="script(cpaas).js"></script>
+  </body>
+</html>

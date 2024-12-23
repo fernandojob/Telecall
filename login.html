@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style(login).css" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <a href="./index.html">
+        <img
+          id="logo"
+          src="/img/logotecall-removebg-preview.png"
+          alt="a logo da empresa Telecall"
+        />
+      </a>
+      <div class="header">
+        <h2>Login</h2>
+        <div class="dark-light">
+          <i class="bx bx-moon moon"></i>
+          <i class="bx bx-sun sun"></i>
+        </div>
+      </div>
+
+      <form id="form" class="form">
+        <div class="form-control">
+          <label id="userLabel" for="username">Nome de usuário</label>
+          <input
+            type="text"
+            id="username"
+            placeholder="Digite seu nome de usuário"
+            autocomplete="on"
+          />
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small id="msgError">Mensagem de erro</small>
+        </div>
+
+        <div class="form-control">
+          <label id="senhaLabel" for="senha">Senha</label>
+          <input
+            type="password"
+            id="senha"
+            placeholder="Digite a sua senha"
+            autocomplete="on"
+          />
+          <span class="exibir-senha" onclick="exibirSenha()"
+            ><i class="fa-regular fa-eye"></i
+          ></span>
+          <i class="fas fa-exclamation-circle"></i>
+          <i class="fas fa-check-circle"></i>
+          <small id="msgErrorsegunda">Mensagem de erro</small>
+        </div>
+
+        <button type="submit">Logar</button>
+
+        <button onclick="location.href='cadastro.html'">
+          Cadastrar Novo Usuario
+        </button>
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/00a61a6834.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="script(login).js"></script>
+  </body>
+</html>

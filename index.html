@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CPaaS Telecall &#8211; Os melhores serviços de CPaaS</title>
+    <link rel="stylesheet" href="style(cpaas).css" type="text/css" />
+    <!-- Pre-carregando  os Scripts e Styles-->
+    <link rel="preload" href="./style(2fa).css" as="style" />
+    <link rel="preload" href="/script(cpaas).js" as="script" />
+    <link rel="preload" href="./style(NMascara).css" as="style" />
+
+    <link rel="preload" href="./scripts.js" as="script" />
+
+    <link rel="preload" href="./script(login).js" as="script" />
+
+    <!-- Pre-renderizando os arquivos HTML -->
+    <link rel="prerender" href="./2FA.html" />
+    <link rel="prerender" href="./NMascara.html" />
+    <link rel="prerender" href="./consultarN.html" />
+    <link rel="prerender" href="./sms.html" />
+    <link rel="prerender" href="./cadastro.html" />
+    <link rel="prerender" href="./login.html" />
+
+    <!-- boxicons css -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/00a61a6834.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Barra de Navegação -->
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="logo navLogo"><a href="./index.html">Telecall</a></span>
+
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="./index.html">Telecall</a></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="./2FA.html">2FA</a></li>
+            <li><a href="./NMascara.html">Número Máscara</a></li>
+            <li><a href="./consultarN.html">Consultar Número</a></li>
+            <li><a href="./sms.html">SMS Programável</a></li>
+            <li><a href="./cadastro.html">Cadastrar</a></li>
+            <li class="usuario"><a href="./login.html">Login</a></li>
+            <li class="deslogar" onclick="deslogar()">Deslogar</li>
+          </ul>
+        </div>
+        <div class="darkLight-searchBox">
+          <div class="botoes">
+            <button id="btnAumentar">A+</button>
+            <button id="btnDiminuir">A-</button>
+          </div>
+          <div class="dark-light">
+            <i class="bx bx-moon moon"></i>
+            <i class="bx bx-sun sun"></i>
+          </div>
+
+          <div class="searchBox">
+            <div class="searchToggle"></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Barra de Navegação -->
+    <section class="cpaas">
+      <div id="text-home-cpaas">
+        <p class="cpaas-top">CPAAS</p>
+        <p class="texto" id="p">
+          Flexível.<br />
+          Autêntico.<br />
+          Seguro.
+        </p>
+      </div>
+      <div class="img-home-cpaas">
+        <img
+          id="cpass-home"
+          src="img/cpass-home.png"
+          alt="4 pessoas, uma mulher com o celular na mão mandando mensagem, um homem em seu notebook trabalhando, um homem enviando um email pelo 
+          computador e uma mulher também conversando no celular."
+        />
+      </div>
+    </section>
+    <section class="about-cpaas">
+      <div class="imagemAPI">
+        <img
+          id="imgAPI"
+          src="./img/api.png"
+          alt="a figura de um homem com seu notebook na mão e um texto grande escrito API"
+        />
+      </div>
+      <div class="textAPI">
+        <p class="oqecpaas">O que é CPaaS?</p>
+        <br />
+        <strong
+          ><p class="textAPI-P texto">
+            O futuro da comunicação já chegou.
+          </p></strong
+        ><br />
+        <p class="textAPI-P texto">
+          O CPaaS (Plataforma de Comunicação como Serviço) é a solução perfeita
+          para o seu negócio.
+        </p>
+        <p class="textAPI-P texto">
+          O serviço oferece a estrutura completa para que canais de comunicação
+          como
+        </p>
+        <p class="textAPI-P texto">
+          <strong
+            >mensagens de texto SMS, chamadas de vídeo e de voz, e-mail, e
+            outros, estejam</strong
+          >
+        </p>
+        <p class="textAPI-P texto">
+          <b>integrados</b> de forma fácil nos sistemas das empresas através de
+          APIs que se conectam
+        </p>
+        <p class="textAPI-P texto">à plataforma Modavo.</p>
+        <p class="comofunciona">Como funciona?</p>
+        <p class="textAPI-P texto">
+          Nossa API permitem que as empresas expandam suas ofertas sem a
+          necessidade de hardware ou software adicional.
+        </p>
+      </div>
+    </section>
+
+    <section class="elemento-azul">
+      <div class="bloco-azul">
+        <p>
+          O CPaaS, com sua <b>escalabilidade</b>, <b>flexibilidade</b>,
+          <b>autenticação</b> e <b>segurança</b> aprimoradas, está
+          <b>revolucionando</b> o modo como as empresas habilitadas em nuvem
+          implementam <b>comunicações de voz, SMS e vídeo.</b>
+        </p>
+      </div>
+    </section>
+    <section class="servicos-tittle">
+      <div class="servicos-s">
+        <p class="servicos-header">Serviços</p>
+        <div class="linha"></div>
+      </div>
+    </section>
+    <section class="servicos">
+      <div class="caixa-icone">
+        <a href="./2FA.html"
+          ><img
+            id="pin-code-servicos"
+            src="./img/serviços/pin-code.png"
+            alt="cadeado com asteriscos"
+        /></a>
+
+        <div class="texto-botao">
+          <p class="servicos-text">
+            2FA<br />
+            <button class="button-6" role="button">
+              <p><a href="./2FA.html">Saiba mais</a></p>
+            </button>
+          </p>
+        </div>
+      </div>
+      <div class="caixa-icone">
+        <a href="./NMascara.html">
+          <img
+            id="ajuste-img"
+            src="./img/serviços/icon-celular.png"
+            alt="um celular"
+          />
+        </a>
+        <p class="servicos-text">Número Máscara</p>
+        <button class="button-6" role="button">
+          <p><a href="./NMascara.html">Saiba mais</a></p>
+        </button>
+      </div>
+      <div class="caixa-icone">
+        <a href="./consultarN.html">
+          <img
+            src="./img/serviços/smartphone-numero-mascara.png"
+            id="ajuste-img"
+            alt="um celular"
+          />
+        </a>
+
+        <p class="servicos-text">Consultar Número</p>
+        <button class="button-6" role="button">
+          <p><a href="./consultarN.html">Saiba mais</a></p>
+        </button>
+      </div>
+      <div class="caixa-icone">
+        <a href="./sms.html">
+          <img
+            id="conversor-servicos"
+            src="./img/serviços/email.png"
+            alt="um envelope de carta"
+          />
+        </a>
+        <div class="texto-botao">
+          <p class="servicos-text">SMS Programável</p>
+          <button class="button-6" role="button">
+            <p><a href="./sms.html">Saiba mais</a></p>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="utilizacoes">
+      <div class="utilizacoes-text">
+        <p class="servicos-header">Utilizações</p>
+      </div>
+      <div class="linha"></div>
+    </section>
+
+    <section class="utilizacoes-conteudo">
+      <div class="caixa-utilizacoes">
+        <i class="fa-solid fa-box fa-4x" style="color: #2fade3"></i>
+        <p class="utilizacoes-tittle">Logística</p>
+        <p class="utilizacoes-legenda texto">Acesso seguro com 2FA.</p>
+        <p class="utilizacoes-legenda texto">
+          Uso de números mascarados para proteção<br />
+          de funcionário e cliente.
+        </p>
+        <p class="utilizacoes-legenda texto">
+          Mantenha o cliente informado sobre entrega e serviços.
+        </p>
+      </div>
+      <div class="caixa-utilizacoes">
+        <i class="fa-solid fa-cart-arrow-down fa-4x" style="color: #2fade3"></i>
+        <p class="utilizacoes-tittle">Varejo</p>
+        <p class="utilizacoes-legenda texto">Compra segura com 2FA.</p>
+        <p class="utilizacoes-legenda texto">
+          Avisos sobre compras e entregas.
+        </p>
+        <p class="utilizacoes-legenda texto">
+          Upsell com novas ofertas e vantagens via SMS
+        </p>
+      </div>
+      <div class="caixa-utilizacoes">
+        <i class="fa-solid fa-phone fa-4x" style="color: #2fade3"></i>
+        <p class="utilizacoes-tittle">Call Center</p>
+        <p class="utilizacoes-legenda texto">
+          Melhore taxas de abertura utilizando alertas SMS para confirmações.
+        </p>
+        <p class="utilizacoes-legenda texto">
+          Economia de números com o uso de um único número máscara por todos os
+          agentes.
+        </p>
+      </div>
+      <div class="caixa-utilizacoes">
+        <i class="fa-solid fa-heart-pulse fa-4x" style="color: #2fade3"></i>
+        <p class="utilizacoes-tittle">Saúde</p>
+        <p class="utilizacoes-legenda texto">Acesso seguro com 2FA.</p>
+        <p class="utilizacoes-legenda texto">
+          Melhore o agendamento e reduza faltas com lembretes por SMS.
+        </p>
+        <p class="utilizacoes-legenda texto">
+          Tokens de autorização para procedimentos com 2FA.
+        </p>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <div class="footerdiv">
+      <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item">
+            <a
+              class="social-icon__link"
+              href="https://www.facebook.com/TelecallBr/?locale=pt_BR"
+              target="_blank"
+            >
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a
+              class="social-icon__link"
+              href="https://www.linkedin.com/company/telecall/"
+              target="_blank"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a
+              class="social-icon__link"
+              href="https://www.instagram.com/telecallbr/"
+              target="_blank"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <ul class="menu-footer">
+          <li class="menu__item">
+            <a class="menu__link" href="./index.html">Telecall</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./2FA.html">2FA</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./NMascara.html">Número Mascara</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./consultarN.html">Consultar Número</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="./sms.html">SMS Programável</a>
+          </li>
+        </ul>
+        <p>&copy;2023 Telecall | All Rights Reserved</p>
+      </footer>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script type="text/javascript" src="script(cpaas).js"></script>
+  </body>
+</html>

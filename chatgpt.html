@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remover números e vírgulas</title>
+  </head>
+  <body>
+    <label for="text-input">Digite apenas letras:</label>
+    <input type="text" id="text-input" />
+
+    <script>
+      const inputElement = document.getElementById("text-input");
+
+      inputElement.addEventListener("input", function () {
+        // Remove números e vírgulas do valor do input usando uma expressão regular
+        const cleanedValue = this.value.replace(/[\d,]/g, "");
+
+        // Atualiza o valor do input apenas com as letras
+        this.value = cleanedValue;
+      });
+    </script>
+  </body>
+</html>
